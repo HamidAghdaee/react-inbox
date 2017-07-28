@@ -1,7 +1,6 @@
 {
-  "name": "react-inbox",
+  "name": "@databraid/react-inbox",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "bootstrap": "3",
     "font-awesome": "^4.7.0",
