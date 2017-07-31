@@ -1,5 +1,5 @@
 {
-  "name": "@databraid/react-inbox",
+  "name": "react-inbox",
   "version": "0.1.0",
   "dependencies": {
     "bootstrap": "3",

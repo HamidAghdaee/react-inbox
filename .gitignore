@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#libs
+/libs/react-inbox-libs/node_modules
+/libs/react-inbox-libs/lib
