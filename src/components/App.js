@@ -41,11 +41,6 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  composing: state.messages.composing,
-  messages: state.messages.messages,
-})
-
 const mapDispatchToProps = dispatch => bindActionCreators({
   getMessages
 }, dispatch)
