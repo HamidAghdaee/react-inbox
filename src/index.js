@@ -10,14 +10,13 @@ import 'font-awesome/css/font-awesome.css';
 import './index.css';
 import rootReducer from './reducers';
 
-const Root = (
-  <Provider store={ store }>
-    <App />
-  </Provider>
-);
+const Root = <App />;
+
 
 ReactDOM.render(
-  Root,
+  (<Provider store={ store }>
+    { Root }
+  </Provider>),
   document.getElementById('root')
 );
 

@@ -1,5 +1,9 @@
 # creating widgets as libraries:
-
+- modify `src/index.js`  to export the root component, exluding the `provider` as the default export, and the root reducer as a names export labeled `rootReducer`, like this:
+```
+export { rootReducer };
+export default Root
+```
 -  create folder `libs` in root directory of widget SPA.
 
 -  create folder `widget-libs` under the `libs` directory.
@@ -10,7 +14,7 @@
 
 ```
 {
-  "name": "@databraid/react-inbox-libs",
+  "name": "@databraid/your-widget-name",
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
@@ -51,4 +55,6 @@
 
 * run `npm install --save  @databraid/your-widget-name`
 
-* then you use ` import DefaultExport from  '@databraid/your-widget-name/lib';` to work the widget default export.
+* then you use ` import DefaultExport from  '@databraid/your-widget-name/lib';` to work with the widget default export, which should be the root component (excluding the `provider`) from your widget.
+
+* use `import { rootReducer  }  from '@databraid/your-widget-name/lib` to work with the root reducer exported by your widget.
