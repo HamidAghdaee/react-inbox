@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'font-awesome/css/font-awesome.css';
 import './index.css';
+import rootReducer from './reducers';
 
 const Root = (
   <Provider store={ store }>
@@ -22,4 +23,5 @@ ReactDOM.render(
 
 registerServiceWorker();
 
+export { rootReducer };
 export default Root

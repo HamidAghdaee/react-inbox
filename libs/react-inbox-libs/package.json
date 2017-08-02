@@ -1,6 +1,6 @@
 {
   "name": "@databraid/react-inbox-libs",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=development babel --presets react-app -D -d lib ../../src/"
+    "build": "rm -rf lib && NODE_ENV=development babel --presets react-app -D -d lib ../../src/"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
