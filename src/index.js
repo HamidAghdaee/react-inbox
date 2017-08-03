@@ -10,7 +10,7 @@ import 'font-awesome/css/font-awesome.css';
 import './index.css';
 import rootReducer from './reducers';
 
-const Root = <App />;
+const root = <App />;
 
 
 ReactDOM.render(
@@ -23,4 +23,4 @@ ReactDOM.render(
 registerServiceWorker();
 
 export { rootReducer };
-export default Root
+export default root

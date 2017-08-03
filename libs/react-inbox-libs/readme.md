@@ -2,7 +2,7 @@
 - modify `src/index.js`  to export the root component, exluding the `provider` as the default export, and the root reducer as a names export labeled `rootReducer`, like this:
 ```
 export { rootReducer };
-export default Root
+export default root
 ```
 -  create folder `libs` in root directory of widget SPA.
 
