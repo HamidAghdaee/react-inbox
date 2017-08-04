@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Toolbar from '../components/Toolbar'
 import Messages from '../components/Messages'
+import AddWidget from '../components/AddWidget'
 import ComposeMessage from '../components/ComposeMessage'
 import {
   getMessages
@@ -32,6 +33,7 @@ class App extends Component {
         </div>
 
         <div className="container">
+          <AddWidget />
           <Toolbar />
           <ComposeMessage />
           <Messages />

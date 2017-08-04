@@ -1,5 +1,26 @@
 //TODO: should handle api failure cases as well
 
+export const ADD_WIDGET = "ADD_WIDGET"
+
+export const addWidget = () => {
+  const widget = {
+    component: "yo",
+    reducer: function() {},
+  }
+  const widgetId = Math.floor(Math.random() * 1000);
+  const action = {
+    type: ADD_WIDGET,
+    widgetId,
+    yo: function() {},
+    widget: {
+      component: "yo",
+      reducer: function() {}
+    }
+  }
+  console.log(action)
+  return action
+}
+
 export const MESSAGES_REQUEST_STARTED = 'MESSAGES_REQUEST_STARTED'
 export const MESSAGES_REQUEST_SUCCESS = 'MESSAGES_REQUEST_SUCCESS'
 export const getMessages = () => {

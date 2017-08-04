@@ -15,7 +15,7 @@ const root = <App />;
 
 ReactDOM.render(
   (<Provider store={ store }>
-    { Root }
+    { root }
   </Provider>),
   document.getElementById('root')
 );
